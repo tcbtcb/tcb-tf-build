@@ -1,6 +1,6 @@
-FROM golang:1.15-alpine as build
+FROM golang:1.15-buster
 
-RUN apk update && apk add git
+RUN apt-get update && apt-get install -y ca-certificates git
 
 # install a version of tf
 RUN cd /root && git clone https://github.com/hashicorp/terraform.git 
