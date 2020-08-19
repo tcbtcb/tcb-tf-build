@@ -11,5 +11,6 @@ RUN go get github.com/carlpett/terraform-provider-sops && \
   mkdir -p /root/.terraform.d/plugins/ && \
   cp /go/bin/terraform-provider-sops /root/.terraform.d/plugins/
 
+ENTRYPOINT ["/bin/bash"]
 
 WORKDIR /whelp
