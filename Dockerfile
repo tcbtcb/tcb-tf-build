@@ -1,7 +1,7 @@
-FROM alpine:latest
+FROM debian:latest
 
-RUN apk update
-RUN apk add --no-cache wget 
+RUN apt update
+RUN apt install -y --no-cache wget 
 RUN mkdir /app
 WORKDIR /app
 RUN wget https://storage.googleapis.com/rsj-episodes/mini
