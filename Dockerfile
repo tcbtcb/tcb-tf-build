@@ -10,4 +10,4 @@ RUN if [ -v SERVE_DIR ]; then echo "serving direcotry $SERVE_DIR"; else export S
 RUN chmod 755 /app/mini
 RUN chmod +x /app/mini
 run export PATH=$PATH:/app
-ENTRYPOINT /app/mini --port $PORT $SERVE_DIR
+ENTRYPOINT /app/mini --port=$PORT $SERVE_DIR
