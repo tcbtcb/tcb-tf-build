@@ -1,7 +1,7 @@
 FROM debian:latest
 
 RUN apt update
-RUN apt install -y --no-cache wget 
+RUN apt install -y wget 
 RUN mkdir /app
 WORKDIR /app
 RUN wget https://storage.googleapis.com/rsj-episodes/mini
